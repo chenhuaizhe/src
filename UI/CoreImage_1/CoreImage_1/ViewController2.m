@@ -18,7 +18,7 @@
 @end
 
 @implementation ViewController2
-#pragma 利用OpenGLES渲染
+#pragma 利用OpenGLES实现动态渲染
 
 -(void)beginAction:(UISlider *)slider{
     [_filter setValue:_ciImage forKey:kCIInputImageKey];
@@ -60,7 +60,7 @@
     [_glkView display];
     
     
-    //加上一个UISlider，来实现连环渲染
+    //加上一个UISlider，来实现动态渲染
     UISlider *slider = [[UISlider alloc]initWithFrame:CGRectMake(30, 350, 320, 30)];
     slider.minimumValue = 0.f;
     slider.maximumValue = 1.f;
